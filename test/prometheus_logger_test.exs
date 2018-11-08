@@ -130,7 +130,7 @@ defmodule Logger.Backends.PrometheusTest do
       # We don't need to do anything on the flush event,
       # because the user is responsible for publishing the metrics.
       state = []
-      PLogger.handle_event(:flush, state)
+      {:ok, ^state} = PLogger.handle_event(:flush, state)
     end
   end
 end
