@@ -21,6 +21,7 @@ def deps do
   [
     {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git"},
   ]
+```
 
 <!--
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
