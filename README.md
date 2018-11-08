@@ -14,6 +14,14 @@ See the [example](example/) directory for an example of how to use the pushgatew
 
 ## Installation
 
+### mix.exs
+
+```elixir
+def deps do
+  [
+    {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git"},
+  ]
+
 <!--
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `prometheus_logger` to your list of dependencies in `mix.exs`:
