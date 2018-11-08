@@ -1,7 +1,7 @@
 # ExPrometheusLogger
 
 ExPrometheusLogger is a [custom Elixir logger backend](https://hexdocs.pm/logger/Logger.html#module-custom-backends).
-It creates counters and increments them on logging events.
+It creates counters and increments them on logging events, providing easy insight into the number of warning & errors occuring in your applications.
 
 ExPrometheusLogger doesn't actually publish the metrics.
 It just creates and increments [prometheus_ex counters](https://hexdocs.pm/prometheus_ex/Prometheus.Metric.Counter.html#content).
@@ -9,6 +9,8 @@ It just creates and increments [prometheus_ex counters](https://hexdocs.pm/prome
 It's the user's responsibility to expose those metrics,
 either by [exposing a `/metrics` endpoint](https://medium.com/@brucepomeroy/publishing-metrics-to-prometheus-from-elixir-bb70efcd6ec1)
 or by using the [pushgateway](https://github.com/deadtrickster/prometheus-push).
+
+See the [example](example/) directory for an example of how to use the pushgateway with ExPrometheusLogger.
 
 ## Installation
 
@@ -29,9 +31,24 @@ end
 
 Just add the logger backend to your config
 
+#### config.exs
+
 ```elixir
 config :logger,
   backends: [:console, Logger.Backends.Prometheus]
+```
+
+and ensure that `:prometheus` is started before `:logger`.
+
+#### mix.exs
+
+```elixir
+def application do
+  [
+    # :prometheus *must* be started before :logger
+    applications: [:prometheus, :logger]
+  ]
+end
 ```
 
 Currently, the only supported configuration is the log level.
@@ -51,8 +68,7 @@ be found at [https://hexdocs.pm/prometheus_logger](https://hexdocs.pm/prometheus
 
 ## Roadmap
 
-In no particular order...
-
-1. Provide examples for using the Pushgateway and exposing a `/metrics` endpoint.
-2. Use [logger metadata][meta-data] to supply an application label for the metrics.
-3. Support labels in general. Maybe read them from user config.
+1. Provide examples for using
+   - [ ] Pushgateway
+   - [ ] Exposing a `/metrics` endpoint
+2. Use pushgateway automatically if `:prometheus, :pushgateway` config is present in app env.

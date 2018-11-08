@@ -1,0 +1,5 @@
+%{
+  "prometheus": {:hex, :prometheus, "4.2.0", "06c58bfdfe28d3168b926da614cb9a6d39593deebde648a5480e32dfa3c370e9", [:mix, :rebar3], [], "hexpm"},
+  "prometheus_ex": {:hex, :prometheus_ex, "3.0.3", "5d722263bb1f7a9b1d02554de42e61ea672b4e3c07c3f74e23ce35ab5e111cfa", [:mix], [{:prometheus, "~> 4.0", [hex: :prometheus, repo: "hexpm", optional: false]}], "hexpm"},
+  "prometheus_push": {:hex, :prometheus_push, "0.0.1", "f4c90c4b2a69fd3e8e59f3a3ec1634efe9a0250fe54916646f7ced99800d934d", [:mix], [{:prometheus_ex, "~> 1.2", [hex: :prometheus_ex, repo: "hexpm", optional: false]}], "hexpm"},
+}
