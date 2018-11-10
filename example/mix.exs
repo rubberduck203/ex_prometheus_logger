@@ -15,7 +15,7 @@ defmodule Example.MixProject do
   def application do
     [
       # :prometheus *must* be started before :logger
-      applications: [:prometheus, :logger]
+      extra_applications: [:prometheus, :logger]
     ]
   end
 
