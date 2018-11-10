@@ -76,7 +76,13 @@ be found at [https://hexdocs.pm/prometheus_logger](https://hexdocs.pm/prometheus
 
 ## Roadmap
 
-1. Provide examples for using
-   - [ ] Pushgateway
+- [ ] Provide examples for using
+   - [x] Pushgateway
    - [ ] Exposing a `/metrics` endpoint
-2. Use pushgateway automatically if `:prometheus, :pushgateway` config is present in app env.
+- [ ] Use pushgateway automatically if `:prometheus, :pushgateway` config is present in app env.
+- [ ] Publish on Hex
+- [ ] Publish docs
+- [ ] Travis CI build/release
+- [ ] Custom labels?
+- [ ] Take `:logger, :level` into consideration
+- [ ] Leverage logger meta-data?
