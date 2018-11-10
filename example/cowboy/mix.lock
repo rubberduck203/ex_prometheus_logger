@@ -8,7 +8,7 @@
   "plug_crypto": {:hex, :plug_crypto, "1.0.0", "18e49317d3fa343f24620ed22795ec29d4a5e602d52d1513ccea0b07d8ea7d4d", [:mix], [], "hexpm"},
   "prometheus": {:hex, :prometheus, "4.2.0", "06c58bfdfe28d3168b926da614cb9a6d39593deebde648a5480e32dfa3c370e9", [:mix, :rebar3], [], "hexpm"},
   "prometheus_ex": {:hex, :prometheus_ex, "3.0.3", "5d722263bb1f7a9b1d02554de42e61ea672b4e3c07c3f74e23ce35ab5e111cfa", [:mix], [{:prometheus, "~> 4.0", [hex: :prometheus, repo: "hexpm", optional: false]}], "hexpm"},
-  "prometheus_logger": {:git, "https://github.com/rubberduck203/ex_prometheus_logger.git", "4eea5b995c04635e2ce92118d5f7021cdbc22460", [tag: "0.1.0"]},
+  "prometheus_logger": {:git, "https://github.com/rubberduck203/ex_prometheus_logger.git", "06600b62be438a15cdf7f5ede0b2e9dedad61b0f", [tag: "0.1.1"]},
   "prometheus_plugs": {:hex, :prometheus_plugs, "1.1.5", "25933d48f8af3a5941dd7b621c889749894d8a1082a6ff7c67cc99dec26377c5", [:mix], [{:accept, "~> 0.1", [hex: :accept, repo: "hexpm", optional: false]}, {:plug, "~> 1.0", [hex: :plug, repo: "hexpm", optional: false]}, {:prometheus_ex, "~> 1.1 or ~> 2.0 or ~> 3.0", [hex: :prometheus_ex, repo: "hexpm", optional: false]}, {:prometheus_process_collector, "~> 1.1", [hex: :prometheus_process_collector, repo: "hexpm", optional: true]}], "hexpm"},
   "ranch": {:hex, :ranch, "1.6.2", "6db93c78f411ee033dbb18ba8234c5574883acb9a75af0fb90a9b82ea46afa00", [:rebar3], [], "hexpm"},
 }
