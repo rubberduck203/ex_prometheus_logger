@@ -19,7 +19,7 @@ See the [example](example/) directory for examples of how to use [pushgateway](e
 ```elixir
 def deps do
   [
-    {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git", tag: "0.1.0"},
+    {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git", tag: "0.1.1"},
   ]
 ```
 
@@ -30,7 +30,7 @@ by adding `prometheus_logger` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:prometheus_logger, "~> 0.1.0"}
+    {:prometheus_logger, "~> 0.1.1"}
   ]
 end
 ```
