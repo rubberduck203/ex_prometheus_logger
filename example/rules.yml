@@ -1,0 +1,7 @@
+groups:
+  - name: ex_logger_example
+    rules:
+      - alert: high_error_rate
+        expr: rate(ex_logger{level="error"}[1m]) > .5
+      - alert: high_warning_rate
+        expr: rate(ex_logger{level="warn"}[1m]) > .5
