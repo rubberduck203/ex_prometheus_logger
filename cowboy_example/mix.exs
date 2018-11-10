@@ -13,7 +13,7 @@ defmodule CowboyExample.MixProject do
 
   def application do
     [
-      extra_applications: [:logger, :prometheus_plugs],
+      extra_applications: [:prometheus, :prometheus_plugs, :logger],
       mod: {CowboyExample.Application, []}
     ]
   end
@@ -21,7 +21,8 @@ defmodule CowboyExample.MixProject do
   defp deps do
     [
       {:plug_cowboy, "~> 2.0"},
-      {:prometheus_plugs, "~> 1.1.1"}
+      {:prometheus_plugs, "~> 1.1.1"},
+      {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git", tag: "0.1.0"},
     ]
   end
 end
