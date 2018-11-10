@@ -84,7 +84,7 @@ See the [example](example/) directory for examples of how to use [pushgateway](e
 ## Alerting
 
 The logger backend uses a `counter` to collect the number of times different level logging events have occured.
-Because this is a counter, to set up an alert, it us recommended to use the [`rate()`](https://prometheus.io/docs/prometheus/latest/querying/functions/#rate) function to calculate the rate errors/warnings are *increasing* over a period of time.
+Because this is a counter, to set up an alert, it us recommended to use the [`rate()`](https://prometheus.io/docs/prometheus/latest/querying/functions/#rate) function to calculate the rate at which errors/warnings are *increasing* over a period of time.
 
 ```prometheus
 rate(
