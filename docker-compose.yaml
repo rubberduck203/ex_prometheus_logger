@@ -1,0 +1,16 @@
+version: '3'
+services:
+  prometheus:
+    ports:
+      - "9090:9090"
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml 
+    # for accessing locally running cowboy example
+    # dont' do this in production, it's not secure
+    network_mode: "host"
+
+  pushgateway:
+    ports:
+      - "9091:9091"
+    image: prom/pushgateway  
