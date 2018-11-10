@@ -22,7 +22,7 @@ defmodule Example.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git"},
+      {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git", tag: "0.1.0"},
       {:prometheus_ex, "~> 3.0", override: true},
       {:prometheus_push, "~> 0.0.1"}
     ]

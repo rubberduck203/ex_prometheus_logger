@@ -19,7 +19,7 @@ See the [example](example/) directory for an example of how to use the pushgatew
 ```elixir
 def deps do
   [
-    {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git"},
+    {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git", tag: "0.1.0"},
   ]
 ```
 
