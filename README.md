@@ -10,7 +10,7 @@ It's the user's responsibility to expose those metrics,
 either by [exposing a `/metrics` endpoint](https://medium.com/@brucepomeroy/publishing-metrics-to-prometheus-from-elixir-bb70efcd6ec1)
 or by using the [pushgateway](https://github.com/deadtrickster/prometheus-push).
 
-See the [example](example/) directory for an example of how to use the pushgateway with ExPrometheusLogger.
+See the [example](example/) directory for examples of how to use [pushgateway](example/pushgateway) and [Cowboy & Plug](example/cowboy) to publish the metrics.
 
 ## Installation
 
@@ -77,9 +77,9 @@ be found at [https://hexdocs.pm/prometheus_logger](https://hexdocs.pm/prometheus
 
 ## Roadmap
 
-- [ ] Provide examples for using
+- [x] Provide examples for using
    - [x] Pushgateway
-   - [ ] Exposing a `/metrics` endpoint
+   - [x] Exposing a `/metrics` endpoint
 - [ ] Use pushgateway automatically if `:prometheus, :pushgateway` config is present in app env.
 - [ ] Publish on Hex
 - [ ] Publish docs
