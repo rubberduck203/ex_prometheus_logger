@@ -23,6 +23,7 @@ defmodule Example.MixProject do
   defp deps do
     [
       {:prometheus_logger, git: "https://github.com/rubberduck203/ex_prometheus_logger.git", tag: "0.1.0"},
+      # {:prometheus_logger, path: "../../"},
       {:prometheus_ex, "~> 3.0", override: true},
       {:prometheus_push, "~> 0.0.1"}
     ]
